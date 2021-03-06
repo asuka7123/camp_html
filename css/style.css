@@ -1,0 +1,184 @@
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+
+.gameTitle {
+    width: 600px;
+    display: block;
+    margin:0 auto 0 auto;
+}
+
+/* タイトルにマウスオーバーした時のアクション */
+
+.gameTitle{
+    transition: 0.5s all;
+  }
+.gameTitle:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.5s all;
+  }
+
+#index {
+    background-color: black;
+    color :white ;
+    text-align:center ;
+    font-family:serif;
+    font-size: 20px;
+    margin: 0 20% 0 20%;
+}
+
+#kaitou {
+    background-color: black;
+    width: 60%;
+    color :white ;
+    text-align:center ;
+    font-family:serif;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#nazo1 #nazo2 #nazo3 #nazo4 {
+    padding-bottom: 30px;   
+}
+/* ↑効かない */
+
+.quiz_no{
+    font-weight: bold;
+}
+
+.quiz_question{
+    box-sizing: border-box;
+    padding: 10px;
+    border: 4px solid #CCC;
+    font-weight: bold;
+}
+
+.quiz_ans_area{
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+  }
+
+.quiz_area .quiz_area_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    color: #FFF;
+    text-align: center;
+}
+
+/* 画面に〇、×を表示するための要素（デフォルト非表示、回答後に一時的に表示） */
+.quiz_area .quiz_area_icon{
+    position: absolute;
+    box-sizing: border-box;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    display: none;
+    font-size: 10em;
+    font-weight: bold;
+    -webkit-text-stroke: 4px #FFF;
+    text-rendering: 4px #FFF;
+}
+
+
+.quiz_area .quiz_area_icon.true, .quiz_area .quiz_area_icon.false{
+    display: block;
+}
+
+.quiz_area .quiz_area_icon.true:before{
+    content: '〇';
+    color: pink;
+    font-weight: bold;
+    margin: auto;
+}
+
+.quiz_area .quiz_area_icon.false:before{
+    content: '×';
+    color: skyblue ;
+    font-weight: bold;
+    margin: auto;
+}
+
+/* 現在の問題数を表示 */
+.quiz_area .quiz_no{
+    font-weight: bold;
+}
+
+/* 問題文と回答後の結果 */
+.quiz_area .quiz_question, .quiz_result{
+    box-sizing: border-box;
+    padding: 15px;
+    border: 4px solid #CCC;
+    font-weight: bold;
+    white-space : pre-wrap; 
+}
+
+/* 回答後の結果は初期非表示 */
+.quiz_area .quiz_result{
+    display: none;
+    text-align: center;
+}
+
+/* クイズの選択肢のデザイン */
+.quiz_area .quiz_ans_area ul{
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: block;
+}
+
+.quiz_area .quiz_ans_area ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.quiz_area .quiz_ans_area ul li{
+    box-sizing: border-box;
+    list-style: none;
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #CCC;
+    margin: 0 0 -2px 0;
+    cursor: pointer;
+}
+
+.quiz_area .quiz_ans_area ul li.selected{
+    background-color: #bcbcbc;
+}
+
+.omedetou{
+    width: 200px;
+}
+
+
