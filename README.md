@@ -16,8 +16,5 @@ html,css,jsを使用して作成しました。
 # Usage
 クイズ
  
-# Note
-注意点などがあれば書く
- 
 # Author 
 * 作成者　asuka7123
