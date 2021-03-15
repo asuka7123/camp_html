@@ -12,9 +12,6 @@
 
 # Dependency
 html,css,jsを使用して作成しました。
-
-# Usage
-クイズ
  
 # Author 
 * 作成者　asuka7123
