@@ -2,8 +2,8 @@
 初めて作ったクイズゲームです。
 
 # DEMO
-![スクリーンショット (22)](https://user-images.githubusercontent.com/80142146/111019799-eca76780-836d-11eb-878b-c111cf3cd697.png)
-クイズは4問あり、最後に正答数が確認できます。
+クイズは4問あり、最後に正答数が確認できます。<br>
+<img src="https://user-images.githubusercontent.com/80142146/111019799-eca76780-836d-11eb-878b-c111cf3cd697.png" width="400"><br>
 
 # Features
 タイトルにマウスオーバーすると拡大するようにしたり、
